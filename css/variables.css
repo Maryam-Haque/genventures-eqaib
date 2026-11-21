@@ -1,0 +1,17 @@
+/* Design tokens — the ONLY place raw colour values live */
+:root{
+--bg:#05090D;--bg-2:#080F14;--teal:#073B3A;--teal-deep:#0B292B;--card:#101A20;
+--text:#EAF1F4;--text-muted:#9FB0B8;--border:rgba(255,255,255,.09);
+--gold:#EAB54A;--purple:#925CFF;--blue:#318BFF;--emerald:#10B981;--danger:#FF8A8A;
+--accent:var(--text-muted);
+--grad-hero:linear-gradient(135deg,var(--bg) 0%,var(--teal-deep) 60%,var(--teal) 100%);
+--font-head:"Space Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+--font-body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+--fs-sm:.875rem;--fs-base:1rem;--fs-lg:1.2rem;--fs-xl:1.6rem;--fs-2xl:clamp(1.8rem,4vw,2.6rem);--fs-3xl:clamp(2.4rem,6vw,4.2rem);
+--lh:1.65;
+--sp-1:.25rem;--sp-2:.5rem;--sp-3:1rem;--sp-4:1.5rem;--sp-5:2.5rem;--sp-6:4rem;--sp-7:6rem;
+--r-sm:8px;--r-md:14px;--r-lg:22px;--r-pill:999px;
+--shadow:0 8px 30px rgba(0,0,0,.35);--glow:0 0 24px color-mix(in srgb,var(--accent) 30%,transparent);
+--t:.2s ease;
+--container:1180px;--nav-h:68px;
+}

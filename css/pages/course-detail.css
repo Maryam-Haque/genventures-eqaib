@@ -1,0 +1,4 @@
+.detail-layout{display:grid;grid-template-columns:1fr 320px;gap:var(--sp-5);align-items:start}
+.detail-aside{position:sticky;top:calc(var(--nav-h) + 1rem)}
+.module{border:1px solid var(--border);border-radius:var(--r-sm);padding:var(--sp-3);background:var(--card);margin-bottom:var(--sp-2)}
+@media(max-width:900px){.detail-layout{grid-template-columns:1fr}.detail-aside{position:static}}

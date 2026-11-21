@@ -1,0 +1,4 @@
+.home-roles{margin-top:var(--sp-3)}
+.sdg-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(70px,1fr));gap:var(--sp-2);margin-top:var(--sp-4)}
+.sdg-tile{aspect-ratio:1;display:grid;place-items:center;border:1px dashed var(--border);border-radius:var(--r-sm);background:var(--card);font:700 var(--fs-sm) var(--font-head);color:var(--text-muted)}
+.spotlight{background:var(--grad-hero);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--sp-5)}

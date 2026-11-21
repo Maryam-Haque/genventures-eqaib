@@ -1,0 +1,3 @@
+.collab{background:var(--grad-hero);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--sp-5)}
+.contact-split{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-5)}
+@media(max-width:800px){.contact-split{grid-template-columns:1fr}}
