@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Course Detail | GenVentures for EQAIB</title>
 <meta name="description" content="GenVentures for EQAIB: Creating Your Own Unique Ripple.">
+<script src="js/theme-init.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
 <link rel="stylesheet" href="css/variables.css">
@@ -14,9 +15,11 @@
 <link rel="stylesheet" href="css/pages/course-detail.css">
 <script src="js/data.js" defer></script>
 <script src="js/components.js" defer></script>
+<script src="js/theme.js" defer></script>
 <script src="js/navigation.js" defer></script>
 <script src="js/filters.js" defer></script>
 <script src="js/form-handlers.js" defer></script>
+<script src="js/roadmap.js" defer></script>
 <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -32,10 +35,11 @@
 <h2>Prerequisites</h2><p>[PREREQUISITES PLACEHOLDER]</p>
 <h2>Syllabus</h2><div class="module"><h3>Module 1: [MODULE TITLE]</h3><p>[MODULE DESCRIPTION PLACEHOLDER]</p></div><div class="module"><h3>Module 2: [MODULE TITLE]</h3><p>[MODULE DESCRIPTION PLACEHOLDER]</p></div><div class="module"><h3>Module 3: [MODULE TITLE]</h3><p>[MODULE DESCRIPTION PLACEHOLDER]</p></div><div class="module"><h3>Module 4: [MODULE TITLE]</h3><p>[MODULE DESCRIPTION PLACEHOLDER]</p></div>
 <h2>Structure &amp; Schedule</h2><p>[SCHEDULE PLACEHOLDER]</p></div>
-<aside class="card detail-aside" aria-label="Course summary"><h3>Course Details</h3>
+<aside class="detail-aside stack" aria-label="Course summary"><div class="card"><h3>Course Details</h3>
 <p>Duration: <strong id="cd-duration">[DURATION]</strong></p><p>Difficulty: <strong id="cd-level">[LEVEL]</strong></p><p>Price: <strong id="cd-price">[PRICE PLACEHOLDER]</strong></p>
 <!-- Enrollment flow comes in a later phase -->
-<a class="btn btn--primary btn--block" href="contact.html">Enrollment Placeholder</a></aside></div></section>
+<a class="btn btn--primary btn--block" href="contact.html">Enrollment Placeholder</a></div><div id="cohort-mount"></div></aside></div></section>
+<section class="section"><div class="container"><div class="section__head"><h2>Your Learning Journey</h2><p>[SECTION DESCRIPTION PLACEHOLDER]</p></div><!-- Reusable: see js/roadmap.js --><div class="roadmap" data-roadmap><ol class="roadmap__steps"><li class="roadmap__step" data-step="1" tabindex="0"><span class="roadmap__num">1</span><h3>Explore the Foundations</h3><p>[STEP DESCRIPTION PLACEHOLDER]</p></li><li class="roadmap__step" data-step="2" tabindex="0"><span class="roadmap__num">2</span><h3>Learn the Core Concepts</h3><p>[STEP DESCRIPTION PLACEHOLDER]</p></li><li class="roadmap__step" data-step="3" tabindex="0"><span class="roadmap__num">3</span><h3>Build a Practical Project</h3><p>[STEP DESCRIPTION PLACEHOLDER]</p></li><li class="roadmap__step" data-step="4" tabindex="0"><span class="roadmap__num">4</span><h3>Test and Improve</h3><p>[STEP DESCRIPTION PLACEHOLDER]</p></li><li class="roadmap__step" data-step="5" tabindex="0"><span class="roadmap__num">5</span><h3>Present Your Solution</h3><p>[STEP DESCRIPTION PLACEHOLDER]</p></li></ol><div class="roadmap__preview" aria-live="polite"><div class="roadmap__panel" data-panel="1"><h3>Step 1: Explore the Foundations</h3><p>[PREVIEW PLACEHOLDER]</p><div class="img-ph">[IMAGE PLACEHOLDER]</div></div><div class="roadmap__panel" data-panel="2"><h3>Step 2: Learn the Core Concepts</h3><p>[PREVIEW PLACEHOLDER]</p><div class="img-ph">[IMAGE PLACEHOLDER]</div></div><div class="roadmap__panel" data-panel="3"><h3>Step 3: Build a Practical Project</h3><p>[PREVIEW PLACEHOLDER]</p><div class="img-ph">[IMAGE PLACEHOLDER]</div></div><div class="roadmap__panel" data-panel="4"><h3>Step 4: Test and Improve</h3><p>[PREVIEW PLACEHOLDER]</p><div class="img-ph">[IMAGE PLACEHOLDER]</div></div><div class="roadmap__panel" data-panel="5"><h3>Step 5: Present Your Solution</h3><p>[PREVIEW PLACEHOLDER]</p><div class="img-ph">[IMAGE PLACEHOLDER]</div></div></div></div></div></section>
 <section class="section section--alt"><div class="container"><div class="section__head"><h2>Related Courses</h2><p>[SECTION DESCRIPTION PLACEHOLDER]</p></div><div class="grid grid--3" id="related-courses"></div></div></section></div>
 </main>
 <!-- Footer injected by js/components.js -->

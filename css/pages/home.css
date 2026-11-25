@@ -2,3 +2,10 @@
 .sdg-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(70px,1fr));gap:var(--sp-2);margin-top:var(--sp-4)}
 .sdg-tile{aspect-ratio:1;display:grid;place-items:center;border:1px dashed var(--border);border-radius:var(--r-sm);background:var(--card);font:700 var(--fs-sm) var(--font-head);color:var(--text-muted)}
 .spotlight{background:var(--grad-hero);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--sp-5)}
+.hero-split{display:grid;gap:var(--sp-5);align-items:center}
+@media(min-width:900px){.hero-split{grid-template-columns:1.1fr .9fr}}
+.hero-split h1{margin-block:var(--sp-2)}
+.founder-card{--accent:var(--gold);position:relative;border-radius:var(--r-lg);padding:var(--sp-2);border:1px solid var(--border);background:var(--grad-card);box-shadow:var(--glow),var(--shadow);max-width:460px;width:100%;justify-self:center}
+.founder-card .portrait-ph{aspect-ratio:4/5;border-radius:calc(var(--r-lg) - 6px)}
+.founder-card__badge{position:absolute;max-width:calc(100% - 2rem);background:var(--card);box-shadow:var(--shadow);font-size:.8rem}
+.founder-card__badge--1{top:1rem;left:1rem}.founder-card__badge--2{bottom:3.6rem;right:1rem}.founder-card__badge--3{bottom:1rem;left:1rem}

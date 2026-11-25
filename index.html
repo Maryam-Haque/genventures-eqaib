@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Home | GenVentures for EQAIB</title>
 <meta name="description" content="GenVentures for EQAIB: Creating Your Own Unique Ripple.">
+<script src="js/theme-init.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
 <link rel="stylesheet" href="css/variables.css">
@@ -14,9 +15,11 @@
 <link rel="stylesheet" href="css/pages/home.css">
 <script src="js/data.js" defer></script>
 <script src="js/components.js" defer></script>
+<script src="js/theme.js" defer></script>
 <script src="js/navigation.js" defer></script>
 <script src="js/filters.js" defer></script>
 <script src="js/form-handlers.js" defer></script>
+<script src="js/roadmap.js" defer></script>
 <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -24,19 +27,28 @@
 <!-- Navbar injected by js/components.js -->
 <div id="navbar-mount"></div>
 <main id="main">
-<section class="hero"><div class="container">
+<section class="hero"><div class="container hero-split"><div>
+<p class="eyebrow">Learn by building</p>
 <h1>Creating Your Own Unique Ripple</h1>
-<p>[MISSION PLACEHOLDER] Empowering young people to move from passive consumers to active creators and independent innovators who build real skills and meaningful impact aligned with the UN Sustainable Development Goals.</p>
-<p>[FOUNDER INTRODUCTION PLACEHOLDER] Meet Maryam Haque, founder of GenVentures for EQAIB.</p>
-<div class="meta home-roles"><span class="badge">App Developer</span><span class="badge">Web Developer</span><span class="badge">Content Creator</span><span class="badge">Techpreneur</span><span class="badge">National Competition Winner</span></div>
-<div class="flex"><a class="btn btn--primary" href="courses.html">Explore Courses</a><a class="btn" href="guides.html">Read Free Guides</a></div></div></section>
+<p>GenVentures for EQAIB helps young people move from passive consumers to active creators. Learn by building, develop your own independent ideas, and create impact aligned with the UN Sustainable Development Goals.</p>
+<p>Maryam Haque is an app and web developer, content creator, techpreneur and national competition winner.</p>
+<div class="meta home-roles"><span class="badge">App Developer</span><span class="badge">Web Developer</span><span class="badge">Content Creator</span><span class="badge">Techpreneur</span></div>
+<div class="flex"><a class="btn btn--primary" href="courses.html">Explore Courses</a><a class="btn" href="guides.html">Start with Free Guides</a></div></div>
+<div class="founder-card"><!-- FOUNDER PORTRAIT: replace the .portrait-ph div with <img src="assets/images/founder-portrait.jpg" alt="Maryam Haque, founder of GenVentures for EQAIB"> -->
+<div class="portrait-ph" role="img" aria-label="Founder portrait placeholder">[FOUNDER PORTRAIT PLACEHOLDER]</div>
+<span class="badge badge--pillar founder-card__badge founder-card__badge--1" data-pillar="E">Founder &amp; Builder</span>
+<span class="badge founder-card__badge founder-card__badge--2">1st Place — NIC Karachi</span>
+<span class="badge founder-card__badge founder-card__badge--3">Technovation Girls Semifinalist</span></div></div></section>
 <section class="section"><div class="container"><div class="section__head"><h2>The EQAIB Pillars</h2><p>[SECTION DESCRIPTION PLACEHOLDER]</p></div><div class="grid grid--4"><a class="card" data-pillar="E" href="courses.html"><div class="icon-ph" aria-hidden="true">E</div><h3>Entrepreneurship</h3><p>[SECTION DESCRIPTION PLACEHOLDER]</p><span class="card__link">Explore Entrepreneurship</span></a><a class="card" data-pillar="Q" href="courses.html"><div class="icon-ph" aria-hidden="true">Q</div><h3>Quantum</h3><p>[SECTION DESCRIPTION PLACEHOLDER]</p><span class="card__link">Explore Quantum</span></a><a class="card" data-pillar="A" href="courses.html"><div class="icon-ph" aria-hidden="true">A</div><h3>Artificial Intelligence</h3><p>[SECTION DESCRIPTION PLACEHOLDER]</p><span class="card__link">Explore Artificial Intelligence</span></a><a class="card" data-pillar="B" href="courses.html"><div class="icon-ph" aria-hidden="true">B</div><h3>Bioinformatics</h3><p>[SECTION DESCRIPTION PLACEHOLDER]</p><span class="card__link">Explore Bioinformatics</span></a></div></div></section>
 <section class="section section--alt"><div class="container"><div class="section__head"><h2>Featured Courses</h2><p>Paid, intensive 1–2 month courses. [SECTION DESCRIPTION PLACEHOLDER]</p></div><div class="grid grid--3" id="featured-courses"></div><p style="margin-top:1.5rem"><a class="btn" href="courses.html">View All Courses</a></p></div></section>
 <section class="section"><div class="container"><div class="section__head"><h2>Featured Guides</h2><p>Free, practical, step-by-step learning resources. [SECTION DESCRIPTION PLACEHOLDER]</p></div><div class="grid grid--3" id="featured-guides"></div><p style="margin-top:1.5rem"><a class="btn" href="guides.html">View All Guides</a></p></div></section>
-<section class="section section--alt"><div class="container"><div class="spotlight stack"><h2>Founder Spotlight</h2>
-<p>[FOUNDER BIOGRAPHY PLACEHOLDER]</p>
-<ul class="stack"><li><span class="badge badge--pillar" data-pillar="E">1st Place</span> NIC Karachi</li><li><span class="badge">Semifinalist</span> Technovation Girls</li><li><span class="badge">Real-world technical projects</span> [ACHIEVEMENT PLACEHOLDER]</li></ul>
-<div class="flex"><a class="btn btn--primary" href="about.html">About the Founder</a><a class="btn" href="portfolio.html">View Portfolio</a></div></div></div></section>
+<section class="section section--alt"><div class="container"><div class="founder-story"><div class="founder-story__media"><!-- FOUNDER PORTRAIT: replace the .portrait-ph div with <img src="assets/images/founder-portrait.jpg" alt="Maryam Haque, founder of GenVentures for EQAIB"> -->
+<div class="portrait-ph" role="img" aria-label="Founder portrait placeholder">[FOUNDER PORTRAIT PLACEHOLDER]</div><span class="badge badge--pillar" data-pillar="E">Founder &amp; Builder</span></div>
+<div class="stack"><p class="eyebrow">Founder story</p><h2>Maryam Haque</h2>
+<p>[FOUNDER STORY PLACEHOLDER — refine later] A young app and web developer building a platform where youth create, test and improve their own ideas.</p>
+<p>[FOUNDER PHILOSOPHY PLACEHOLDER] Learn by experimenting: each attempt, including the ones that fail, makes the next version better.</p>
+<blockquote class="quote">[PLACEHOLDER QUOTE — replace with approved founder wording]</blockquote>
+<div class="meta"><span class="badge">1st Place — NIC Karachi</span><span class="badge">Technovation Girls Semifinalist</span></div><a class="btn btn--primary" href="about.html">Read Full Story</a> <a class="btn" href="portfolio.html">View Portfolio</a></div></div></div></section>
 <section class="section"><div class="container"><div class="section__head"><h2>Youth Innovation and the UN SDGs</h2><p>[SECTION DESCRIPTION PLACEHOLDER] How young creators can build solutions aligned with the UN Sustainable Development Goals.</p></div><div class="sdg-strip" aria-label="UN SDG placeholders"><div class="sdg-tile" title="[SDG PLACEHOLDER]">SDG</div><div class="sdg-tile" title="[SDG PLACEHOLDER]">SDG</div><div class="sdg-tile" title="[SDG PLACEHOLDER]">SDG</div><div class="sdg-tile" title="[SDG PLACEHOLDER]">SDG</div><div class="sdg-tile" title="[SDG PLACEHOLDER]">SDG</div><div class="sdg-tile" title="[SDG PLACEHOLDER]">SDG</div></div></div></section>
 </main>
 <!-- Footer injected by js/components.js -->

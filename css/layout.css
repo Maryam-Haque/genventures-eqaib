@@ -13,3 +13,4 @@
 .hero--page{padding-block:var(--sp-6) var(--sp-5)}
 .hero p{margin-top:var(--sp-3);font-size:var(--fs-lg)}
 .hero .flex{margin-top:var(--sp-4)}
+.section--tight{padding-block:var(--sp-4) 0}

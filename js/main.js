@@ -15,3 +15,7 @@ const gd=$("#guide-detail");if(gd){const g=D.guides.find(x=>x.id===id)||D.guides
  $("#gd-title").textContent=g.title;$("#gd-category").textContent=g.category;$("#gd-level").textContent=g.level;$("#gd-time").textContent=g.time;document.title=g.title+" | GenVentures for EQAIB";
  fill("#related-guides",D.guides.filter(x=>x.id!==g.id).slice(0,3).map(GV.guideCard).join(""));}
 })();
+
+/* Cohort card mount (courses list = generic card; course detail = per-course). */
+(function(){const m=document.getElementById("cohort-mount");if(!m)return;const id=new URLSearchParams(location.search).get("id");
+const c=document.getElementById("course-detail")?(GV_DATA.courses.find(x=>x.id===id)||GV_DATA.courses[0]):null;m.innerHTML=GV.cohortCard(c);})();

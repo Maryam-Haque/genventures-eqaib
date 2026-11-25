@@ -1,17 +1,34 @@
-/* Design tokens — the ONLY place raw colour values live */
+/* Single source of truth. Dark = signature default; light via [data-theme="light"]. */
+:root,[data-theme="dark"]{
+color-scheme:dark;
+--color-bg-primary:#05090D;--color-bg-secondary:#080F14;--color-teal:#073B3A;--color-teal-deep:#0B292B;--color-card:#101A20;
+--color-border:#23343A;--color-text-primary:#F5F7FA;--color-text-secondary:#A7B4BD;
+--shadow:0 8px 30px rgba(0,0,0,.4);--color-nav-bg:rgba(5,9,13,.85);
+}
+[data-theme="light"]{
+color-scheme:light;
+--color-bg-primary:#F5F7FA;--color-bg-secondary:#E9F0F1;--color-teal:#BFE3DF;--color-teal-deep:#D6ECEA;--color-card:#FFFFFF;
+--color-border:#C6D6DA;--color-text-primary:#0B1A1F;--color-text-secondary:#46585F;
+--shadow:0 6px 20px rgba(11,26,31,.10);--color-nav-bg:rgba(245,247,250,.88);
+}
 :root{
---bg:#05090D;--bg-2:#080F14;--teal:#073B3A;--teal-deep:#0B292B;--card:#101A20;
---text:#EAF1F4;--text-muted:#9FB0B8;--border:rgba(255,255,255,.09);
---gold:#EAB54A;--purple:#925CFF;--blue:#318BFF;--emerald:#10B981;--danger:#FF8A8A;
+/* EQAIB accents: identical in both themes */
+--color-accent-gold:#EAB54A;--color-accent-purple:#925CFF;--color-accent-blue:#318BFF;--color-accent-emerald:#10B981;
+--color-on-gold:#05090D;--color-ink:#05090D;--color-danger:#E5484D;
+/* Legacy aliases used by existing stylesheets */
+--bg:var(--color-bg-primary);--bg-2:var(--color-bg-secondary);--teal:var(--color-teal);--teal-deep:var(--color-teal-deep);--card:var(--color-card);
+--text:var(--color-text-primary);--text-muted:var(--color-text-secondary);--border:var(--color-border);
+--gold:var(--color-accent-gold);--purple:var(--color-accent-purple);--blue:var(--color-accent-blue);--emerald:var(--color-accent-emerald);--danger:var(--color-danger);
 --accent:var(--text-muted);
---grad-hero:linear-gradient(135deg,var(--bg) 0%,var(--teal-deep) 60%,var(--teal) 100%);
+--grad-hero:linear-gradient(135deg,var(--color-bg-primary) 0%,var(--color-teal-deep) 60%,var(--color-teal) 100%);
+--grad-card:linear-gradient(160deg,var(--color-teal-deep),var(--color-card));
 --font-head:"Space Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 --font-body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 --fs-sm:.875rem;--fs-base:1rem;--fs-lg:1.2rem;--fs-xl:1.6rem;--fs-2xl:clamp(1.8rem,4vw,2.6rem);--fs-3xl:clamp(2.4rem,6vw,4.2rem);
 --lh:1.65;
 --sp-1:.25rem;--sp-2:.5rem;--sp-3:1rem;--sp-4:1.5rem;--sp-5:2.5rem;--sp-6:4rem;--sp-7:6rem;
 --r-sm:8px;--r-md:14px;--r-lg:22px;--r-pill:999px;
---shadow:0 8px 30px rgba(0,0,0,.35);--glow:0 0 24px color-mix(in srgb,var(--accent) 30%,transparent);
---t:.2s ease;
---container:1180px;--nav-h:68px;
+--glow:0 0 24px color-mix(in srgb,var(--accent) 30%,transparent);
+--focus-ring:2px solid var(--color-accent-gold);
+--t:.2s ease;--container:1180px;--nav-h:68px;
 }

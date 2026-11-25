@@ -1,5 +1,7 @@
 /* Central placeholder data. Replace with real content later (or load from JSON/API). */
 window.GV_DATA={
+/* Cohort config. courseFees: {courseId:"Rs. ..."} once verified. Countdown stays OFF until a real FUTURE startISO (e.g. "2027-01-15T09:00:00") is set and enabled. */
+cohort:{startingFee:"Rs. 500",placeholderStart:"1-1-26",courseFees:{},countdown:{enabled:false,startISO:null}},
 pillars:{E:"Entrepreneurship",Q:"Quantum",A:"Artificial Intelligence",B:"Bioinformatics"},
 courses:[
 {id:"c1",title:"[COURSE TITLE] Venture Building",pillar:"E",desc:"[SECTION DESCRIPTION PLACEHOLDER]",duration:"[DURATION]",level:"Beginner",price:"[PRICE PLACEHOLDER]"},
