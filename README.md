@@ -1,9 +1,5 @@
 # GenVentures for EQAIB — Phase 1 skeleton
 Plain HTML/CSS/JS. No build step, no frameworks.
-## Run
-1. Open the `GenVentures` folder in VS Code.
-2. Install the **Live Server** extension, right-click `index.html` and choose *Open with Live Server*.
-   (Alternative: run `python -m http.server 5500` in the folder, then visit http://localhost:5500.)
 ## Structure
 - `css/variables.css` holds all design tokens; then `global`, `layout`, `components`, `pages/*`.
 - `js/components.js` holds the navbar/footer (edit nav links once there). `data.js` holds placeholder content. `filters.js` handles search/pillar filtering. `form-handlers.js` is validation only.
